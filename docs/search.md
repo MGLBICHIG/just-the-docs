@@ -148,16 +148,16 @@ $ bundle exec just-the-docs rake search:init
 {: .warning }
 > 定制搜索索引是一个需要 Javascript 和 Liquid 知识的高级功能。
 
-1. When Just the Docs is a local or gem theme, ensure `assets/js/zzzz-search-data.json` is up-to-date with [Generate search index when used as a gem](#generate-search-index-when-used-as-a-gem).
-2. Add a new file named `_includes/lunr/custom-data.json`. Insert custom Liquid code that reads your data (e.g. the page object at `include.page`) then generates custom Javascript fields that hold the custom data you want to index. Verify these fields in the generated `assets/js/search-data.json`.
-3. Add a new file named `_includes/lunr/custom-index.js`. Insert custom Javascript code that reads your custom Javascript fields and inserts them into the search index. You may want to inspect `assets/js/just-the-docs.js` to better understand the code.
+1. 当 Just the Docs 是一个本地或者 GEM 主题时，用[使用 GEM 生成搜索索引](#generate-search-index-when-used-as-a-gem)确保 `assets/js/zzzz-search-data.json` 最新。
+2. 添加一个新文件 `_includes/lunr/custom-data.json`。插入定制的 Liquid 代码——读取数据（例如页面对象 `include.page`）然后生成定制的 Javascript 字段——将定制数据加入索引。在生成的 `assets/js/search-data.json` 文件中验证这些字段。
+3. 添加一个新文件 `_includes/lunr/custom-index.js`。插入定制的 Javascript 代码——读取定制的 Javascript 字段，然后插入到搜索索引。也许你还想要阅读 `assets/js/just-the-docs.js` 代码更好的理解搜索机制。
 
 ### 示例：添加定制的 `usage` 和 `examples` 字段
 {: .text-delta }
 
-This example adds front matter `usage` and `examples` fields to the search index.
+这个示例添加了 front matter 的 `usage` 和 `examples` 字段到搜索索引中。
 
-`_includes/lunr/custom-data.json` custom code reads the page `usage` and `examples` fields, normalizes the text, and writes the text to custom Javascript `myusage` and `myexamples` fields. Javascript fields are similar yet [not the same as JSON](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON#javascript_and_json_differences). `jsonify` will probably work for most scenarios.
+`_includes/lunr/custom-data.json` 定制代码读取页面的 `usage` 和 `examples` 字段，序列化文本，并将文本写入定制的 Javascript 代码的 `myusage` 和 `myexamples` 字段。 Javascript 字段同 [not the same as JSON](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON#javascript_and_json_differences)。`jsonify` 可以在大多场景工作。
 
 {% raw %}
 ```liquid
@@ -168,7 +168,7 @@ This example adds front matter `usage` and `examples` fields to the search index
 ```
 {% endraw %}
 
-`_includes/lunr/custom-index.js` custom code is inserted into the Javascript loop of `assets/js/just-the-docs.js`. All custom Javascript fields are accessed as fields of `docs[i]` such as `docs[i].myusage`. Finally, append your custom fields on to the already existing `docs[i].content`.
+`_includes/lunr/custom-index.js` 定制代码插入 Javascript 循环 `assets/js/just-the-docs.js`。所有定制 Javascript 字段访问 `docs[i]` 字段如 `docs[i].myusage`。最后，添加你的定制字段到已存在的 `docs[i].content` 后。
 
 ```javascript
 const content_to_merge = [docs[i].content, docs[i].myusage, docs[i].myexamples];
