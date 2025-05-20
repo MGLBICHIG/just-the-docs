@@ -1,37 +1,37 @@
 ---
-title: Home
+title: 主页
 layout: home
 nav_order: 1
 description: "Just the Docs is a responsive Jekyll theme with built-in search that is easily customizable and hosted on GitHub Pages."
 permalink: /
 ---
 
-# Focus on writing good documentation
+# 聚焦编写好文档
 {: .fs-9 }
 
-Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.
+Just the Docs 助力文档快速启动——给你一个易定制的 Jekyll 文档主题且可在 GitHub Pages 免费托管！
 {: .fs-6 .fw-300 }
 
-[Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[View it on GitHub][Just the Docs repo]{: .btn .fs-5 .mb-4 .mb-md-0 }
+[现在上手](#快速上手){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[去 GitHub 查看源码][Just the Docs repo]{: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
 {: .warning }
-> This website documents the features of the current `main` branch of the Just the Docs theme. See [the CHANGELOG]({% link CHANGELOG.md %}) for a list of releases, new features, and bug fixes.
+> 当前站点文档的功能就是使用的 Just the Docs 主题的 `main` 分支。查看 [the CHANGELOG]({% link CHANGELOG.md %}) 获取发布清单、新功能及问题修正等。
 
-Just the Docs is a theme for generating static websites with [Jekyll]. You can write source files for your web pages using [Markdown], the [Liquid] templating language, and HTML.[^1] Jekyll builds your site by converting all files that have [front matter] to HTML. Your [Jekyll configuration] file determines which theme to use, and sets general parameters for your site, such as the URL of its home page.
+Just the Docs 是一款利用 [Jekyll] 生成静态网站的软件主题。你可以利用 [Markdown]、[Liquid] 模板语言和 HTML[^1] 编写网页源文件，然后用 Jekyll 转换这些带有 [front matter] 的源文件为 HTML。你的 [Jekyll configuration] 文件决定使用什么主题、设置你的站点的常用参数等，例如主页的 URL。
 
-Jekyll builds this Just the Docs theme docs website using the theme itself. These web pages show how your web pages will look *by default* when you use this theme. But you can easily *[customize]* the theme to make them look completely different!
+Jekyll 构建这个 Just the Docs 主题文档就是使用的自己的主题。这些网页所展示的就是当你使用这个主题时**默认**情况下应该看到的。当然，你可以很容易的通过**[定制]**主题来使其看起来完全不同！
 
-Browse the docs to learn more about how to use this theme.
+查阅文档学习更多如何使用这个主题。
 
-## Getting started
+## 快速上手
 
-The [Just the Docs Template] provides the simplest, quickest, and easiest way to create a new website that uses the Just the Docs theme. To get started with creating a site, just click "[use the template]"!
+[Just the Docs 模板]提供了利用 Just the Docs 主题的最简单、最迅速和最容易的创建站点方式。快速上手创建站点，只需点击“[使用模板]”！
 
 {: .note }
-To use the theme, you do ***not*** need to clone or fork the [Just the Docs repo]! You should do that only if you intend to browse the theme docs locally, contribute to the development of the theme, or develop a new theme based on Just the Docs.
+使用本主题，你**不需要**克隆或者复刻[Just the Docs repo]！只有在你需要本地计算机上浏览主题文档、辅助开发主题或者基于 Just the Docs 开发新主题时克隆或者复刻。
 
 You can easily set the site created by the template to be published on [GitHub Pages] – the [template README] file explains how to do that, along with other details.
 
@@ -78,7 +78,7 @@ Just the Docs is committed to fostering a welcoming community.
 
 ----
 
-[^1]: The [source file for this page] uses all three markup languages.
+[^1]: [本页的源文件]使用了三种标记语言。
 
 [^2]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
 
@@ -87,13 +87,13 @@ Just the Docs is committed to fostering a welcoming community.
 [Liquid]: https://github.com/Shopify/liquid/wiki
 [Front matter]: https://jekyllrb.com/docs/front-matter/
 [Jekyll configuration]: https://jekyllrb.com/docs/configuration/
-[source file for this page]: https://github.com/just-the-docs/just-the-docs/blob/main/index.md
-[Just the Docs Template]: https://just-the-docs.github.io/just-the-docs-template/
+[本页的源文件]: https://github.com/just-the-docs/just-the-docs/blob/main/index.md
+[Just the Docs 模板]: https://just-the-docs.github.io/just-the-docs-template/
 [Just the Docs]: https://just-the-docs.com
 [Just the Docs repo]: https://github.com/just-the-docs/just-the-docs
 [Just the Docs README]: https://github.com/just-the-docs/just-the-docs/blob/main/README.md
 [GitHub Pages]: https://pages.github.com/
 [Template README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
 [GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[customize]: {% link docs/customization.md %}
-[use the template]: https://github.com/just-the-docs/just-the-docs-template/generate
+[定制]: {% link docs/customization.md %}
+[使用模板]: https://github.com/just-the-docs/just-the-docs-template/generate
