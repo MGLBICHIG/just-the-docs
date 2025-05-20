@@ -13,14 +13,14 @@ Just the Docs 助力文档快速启动——给你一个易定制的 Jekyll 文�
 {: .fs-6 .fw-300 }
 
 [现在上手](#快速上手){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[去 GitHub 查看源码][Just the Docs repo]{: .btn .fs-5 .mb-4 .mb-md-0 }
+[去 GitHub 查看源码][Just the Docs 代码库]{: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
 {: .warning }
 > 当前站点文档的功能就是使用的 Just the Docs 主题的 `main` 分支。查看 [the CHANGELOG]({% link CHANGELOG.md %}) 获取发布清单、新功能及问题修正等。
 
-Just the Docs 是一款利用 [Jekyll] 生成静态网站的软件主题。你可以利用 [Markdown]、[Liquid] 模板语言和 HTML[^1] 编写网页源文件，然后用 Jekyll 转换这些带有 [front matter] 的源文件为 HTML。你的 [Jekyll configuration] 文件决定使用什么主题、设置你的站点的常用参数等，例如主页的 URL。
+Just the Docs 是一款利用 [Jekyll] 生成静态网站的软件主题。你可以利用 [Markdown]、[Liquid] 模板语言和 HTML[^1] 编写网页源文件，然后用 Jekyll 转换这些带有 [front matter] 的源文件为 HTML。你的 [Jekyll 配置文件]文件决定使用什么主题、设置你的站点的常用参数等，例如主页的 URL。
 
 Jekyll 构建这个 Just the Docs 主题文档就是使用的自己的主题。这些网页所展示的就是当你使用这个主题时**默认**情况下应该看到的。当然，你可以很容易的通过**[定制]**主题来使其看起来完全不同！
 
@@ -31,7 +31,7 @@ Jekyll 构建这个 Just the Docs 主题文档就是使用的自己的主题。�
 [Just the Docs 模板]提供了利用 Just the Docs 主题的最简单、最迅速和最容易的创建站点方式。快速上手创建站点，只需点击“[使用模板]”！
 
 {: .note }
-使用本主题，你**不需要**克隆或者复刻[Just the Docs repo]！只有在你需要本地计算机上浏览主题文档、辅助开发主题或者基于 Just the Docs 开发新主题时克隆或者复刻。
+使用本主题，你**不需要**克隆或者复刻 [Just the Docs 代码库]！只有在你需要本地计算机上浏览主题文档、辅助开发主题或者基于 Just the Docs 开发新主题时克隆或者复刻。
 
 You can easily set the site created by the template to be published on [GitHub Pages] – the [template README] file explains how to do that, along with other details.
 
@@ -86,11 +86,11 @@ Just the Docs is committed to fostering a welcoming community.
 [Markdown]: https://daringfireball.net/projects/markdown/
 [Liquid]: https://github.com/Shopify/liquid/wiki
 [Front matter]: https://jekyllrb.com/docs/front-matter/
-[Jekyll configuration]: https://jekyllrb.com/docs/configuration/
+[Jekyll 配置文件]: https://jekyllrb.com/docs/configuration/
 [本页的源文件]: https://github.com/just-the-docs/just-the-docs/blob/main/index.md
 [Just the Docs 模板]: https://just-the-docs.github.io/just-the-docs-template/
 [Just the Docs]: https://just-the-docs.com
-[Just the Docs repo]: https://github.com/just-the-docs/just-the-docs
+[Just the Docs 代码库]: https://github.com/just-the-docs/just-the-docs
 [Just the Docs README]: https://github.com/just-the-docs/just-the-docs/blob/main/README.md
 [GitHub Pages]: https://pages.github.com/
 [Template README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md

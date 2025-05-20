@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Just the Docs
-description: A Jekyll theme for documentation
+description: 一款基于 Jekyll 的文档主题
 baseurl: "/just-the-docs" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 repository: just-the-docs/just-the-docs # for github-metadata
@@ -110,7 +110,7 @@ heading_anchors: true
 
 # Aux links for the upper right navigation
 aux_links:
-  "Just the Docs on GitHub":
+  "GitHub 的 Just the Docs":
     - "https://github.com/just-the-docs/just-the-docs"
 
 # Makes Aux links open in a new tab. Default is false
@@ -151,7 +151,7 @@ last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https:/
 
 # Footer "Edit this page on GitHub" link text
 gh_edit_link: true # show or hide edit this page link
-gh_edit_link_text: "Edit this page on GitHub"
+gh_edit_link_text: "在 GitHub 上编辑此页内容"
 gh_edit_repository: "https://github.com/just-the-docs/just-the-docs" # the github URL for your repo
 gh_edit_branch: "main" # the branch that your docs is served from
 # gh_edit_source: docs # the source that your files originate from
@@ -165,16 +165,16 @@ callouts:
   highlight:
     color: yellow
   important:
-    title: Important
+    title: 重点
     color: blue
   new:
-    title: New
+    title: 新增
     color: green
   note:
-    title: Note
+    title: 注记
     color: purple
   warning:
-    title: Warning
+    title: 注意
     color: red
 
 # Google Analytics Tracking (optional)
