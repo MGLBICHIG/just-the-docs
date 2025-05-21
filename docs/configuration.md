@@ -1,15 +1,15 @@
 ---
-title: Configuration
+title: 配置
 nav_order: 2
 ---
 
-# Configuration
+# 配置
 {: .no_toc }
 
-Just the Docs has some specific configuration parameters that can be defined in your Jekyll site's \_config.yml file.
+Just the Docs 有些配置参数可以在你的 Jekyll 站点的 \_config.yml 文件中设定。
 {: .fs-6 .fw-300 }
 
-## Table of contents
+## 目录
 {: .no_toc .text-delta }
 
 1. TOC
@@ -19,14 +19,14 @@ Just the Docs has some specific configuration parameters that can be defined in 
 
 View this site's [\_config.yml](https://github.com/just-the-docs/just-the-docs/tree/main/_config.yml) file as an example.
 
-## Site logo
+## 站点 logo
 
 ```yaml
 # Set a path/url to a logo that will be displayed instead of the title
 logo: "/assets/images/just-the-docs.png"
 ```
 
-## Site favicon
+## 站点 favicon
 
 ```yaml
 # Set a path/url to a favicon that will be displayed by the browser
@@ -35,7 +35,7 @@ favicon_ico: "/assets/images/favicon.ico"
 
 If the path to your favicon is `/favicon.ico`, you can leave `favicon_ico` unset.
 
-## Search
+## 搜索
 
 ```yaml
 # Enable or disable the site search
@@ -69,7 +69,7 @@ search:
   focus_shortcut_key: 'k'
 ```
 
-## Mermaid Diagrams
+## Mermaid 表
 {: .d-inline-block }
 
 New (v0.4.0)
@@ -100,7 +100,7 @@ aux_links:
 aux_links_new_tab: false
 ```
 
-## Navigation sidebar
+## 边栏导航
 
 ```yaml
 # Enable or disable the side/mobile menu globally

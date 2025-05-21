@@ -33,34 +33,33 @@ Jekyll 构建这个 Just the Docs 主题文档就是使用的自己的主题。�
 {: .note }
 使用本主题，你**不需要**克隆或者复刻 [Just the Docs 代码库]！只有在你需要本地计算机上浏览主题文档、辅助开发主题或者基于 Just the Docs 开发新主题时克隆或者复刻。
 
-You can easily set the site created by the template to be published on [GitHub Pages] – the [template README] file explains how to do that, along with other details.
+你通过发布在 [GitHub Pages] 的模板很容易就能创建站点——[模板 README] 文件解释了如何操作及其他一些细节。
 
-If [Jekyll] is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^2] And you will be able to deploy your local build to a different platform than GitHub Pages.
+如果你的计算机已经安装了 [Jekyll]，你也可以在**本地**构建和预览创建的站点。这让可以在提交修改前测试预览，从而避免在只有发布到 GitHub Pages 后才能看到修改效果。[^2]当然你也可以部署你在本地构建的站点到 GitHub Pages 以外的平台。
 
-More specifically, the created site:
+更多创建站点的特殊细节：
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages
+- 用基于 GEM 的方法，例如，使用 `Gemfile` 加载 `just-the-docs` GEM
+- 在 GitHub Pages 用 [GitHub Pages / Actions workflow] 构建和发布站点
 
-Other than that, you're free to customize sites that you create with the template, however you like. You can easily change the versions of `just-the-docs` and Jekyll it uses, as well as adding further plugins.
+除此以外，你可以根据自己的喜好自由定制用模板创建的站点。你可以很容易的改变所使用的 `just-the-docs` 和 Jekyll 的版本，以及插件等。
 
 {: .note }
-See the theme [README][Just the Docs README] for how to use the theme as a gem without creating a new site.
+查看主题 [README][Just the Docs README] 获取更多使用 GEM 做为主题而不是区创建站点的细节。
 
-## About the project
+## 关于本项目
 
-Just the Docs is &copy; 2017-{{ "now" | date: "%Y" }} by [Patrick Marsceill](https://patrickmarsceill.com).
+Just the Docs &copy; 2017-{{ "now" | date: "%Y" }} 由 [Patrick Marsceill](https://patrickmarsceill.com) 所有。
 
-### License
+### 许可
 
-Just the Docs is distributed by an [MIT license](https://github.com/just-the-docs/just-the-docs/tree/main/LICENSE.txt).
+Just the Docs 基于 [MIT 许可](https://github.com/just-the-docs/just-the-docs/tree/main/LICENSE.txt) 分发。
 
-### Contributing
+### 贡献
 
-When contributing to this repository, please first discuss the change you wish to make via issue,
-email, or any other method with the owners of this repository before making a change. Read more about becoming a contributor in [our GitHub repo](https://github.com/just-the-docs/just-the-docs#contributing).
+当你为软件做贡献时，请首先通过 Issue、电子邮件或者其他方法同代码库管理员讨论你所设想的修改后再做代码完善。更多如何成为一名贡献者的细节参考[我们的 GitHub 代码库](https://github.com/just-the-docs/just-the-docs#contributing)。
 
-#### Thank you to the contributors of Just the Docs!
+#### 诚挚感谢所有的 Just the Docs 的贡献者！
 
 <ul class="list-style-none">
 {% for contributor in site.github.contributors %}
@@ -70,17 +69,17 @@ email, or any other method with the owners of this repository before making a ch
 {% endfor %}
 </ul>
 
-### Code of Conduct
+### 行为准则（Code of Conduct）
 
-Just the Docs is committed to fostering a welcoming community.
+Just the Docs 承诺发展为一个友善的社区。
 
-[View our Code of Conduct](https://github.com/just-the-docs/just-the-docs/tree/main/CODE_OF_CONDUCT.md) on our GitHub repository.
+查看在我们的 GitHub 代码库的[行为准则](https://github.com/just-the-docs/just-the-docs/tree/main/CODE_OF_CONDUCT.md)。
 
 ----
 
 [^1]: [本页的源文件]使用了三种标记语言。
 
-[^2]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
+[^2]: [在 GitHub，十分钟即可完成站点的修改提交发布](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site)。
 
 [Jekyll]: https://jekyllrb.com
 [Markdown]: https://daringfireball.net/projects/markdown/
