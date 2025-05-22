@@ -1,6 +1,6 @@
 ---
 title: Y
-parent: Ancestry
+parent: 族系
 ---
 # Y
 

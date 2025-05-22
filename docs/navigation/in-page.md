@@ -1,13 +1,13 @@
 ---
-title: In-Page Navigation
-parent: Navigation
+title: 页内导航
+parent: 导航
 nav_order: 5
 ---
 
-# In-Page Navigation
+# 页内导航
 {: .no_toc }
 
-## Table of Contents
+## 目录
 {: .no_toc .text-delta }
 
 1. TOC

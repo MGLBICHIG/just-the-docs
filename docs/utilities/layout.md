@@ -1,12 +1,12 @@
 ---
-title: Layout
-parent: Utilities
+title: 页面版型
+parent: CSS 实用类
 ---
 
-# Layout Utilities
+# 版型实用类
 {: .no_toc }
 
-## Table of contents
+## 目录
 {: .no_toc .text-delta }
 
 1. TOC

@@ -1,9 +1,9 @@
 ---
-title: Markdown kitchen sink
+title: Markdown 用法展示
 nav_order: 99
 ---
 
-<button class="btn js-toggle-dark-mode">Preview dark color scheme</button>
+<button class="btn js-toggle-dark-mode">预览暗色模式</button>
 
 <script>
 const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
@@ -11,33 +11,33 @@ const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
 jtd.addEvent(toggleDarkMode, 'click', function(){
   if (jtd.getTheme() === 'dark') {
     jtd.setTheme('light');
-    toggleDarkMode.textContent = 'Preview dark color scheme';
+    toggleDarkMode.textContent = '预览暗色模式';
   } else {
     jtd.setTheme('dark');
-    toggleDarkMode.textContent = 'Return to the light side';
+    toggleDarkMode.textContent = '返回亮色模式';
   }
 });
 </script>
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+文字可以是**粗体**，_斜体_，或者~~删除线~~。
 
-[Link to another page]({{site.baseurl}}/).
+[链接到其它页面]({{site.baseurl}}/)。
 
 There should be whitespace between paragraphs.
 
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
-# Header 1
+# 1 级标题
 
 This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
 
-## Header 2
+## 2 级标题
 
 > This is a blockquote following a header.
 >
 > When something is important enough, you do it even if the odds are not in your favor.
 
-### Header 3
+### 3 级标题
 
 ```js
 // Javascript code with syntax highlighting.
@@ -54,19 +54,19 @@ GitHubPages::Dependencies.gems.each do |gem, version|
 end
 ```
 
-#### Header 4 `with code not transformed`
+#### `带有不转换代码的` 4 级标题
 
 *   This is an unordered list following a header.
 *   This is an unordered list following a header.
 *   This is an unordered list following a header.
 
-##### Header 5
+##### 5 级标题
 
 1.  This is an ordered list following a header.
 2.  This is an ordered list following a header.
 3.  This is an ordered list following a header.
 
-###### Header 6
+###### 6 级标题
 
 [This is a very long link which wraps and therefore doesn't overflow
 even when it comes at the beginning](.) of the line.

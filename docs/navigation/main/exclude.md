@@ -1,10 +1,10 @@
 ---
-title: Excluding Pages
-parent: Main Navigation
+title: 剔除页面
+parent: 主导航
 nav_order: 2
 ---
 
-# Excluding Pages
+# 剔除页面
 
 For specific pages that you do not wish to include in the main navigation (e.g., a 404 page or a landing page) set `nav_exclude: true` in their front matter.
 

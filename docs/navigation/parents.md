@@ -1,10 +1,10 @@
 ---
-title: Breadcrumbs
-parent: Navigation 
+title: 面包屑导航
+parent: 导航 
 nav_order: 3
 ---
 
-# Breadcrumbs
+# 面包屑导航
 
 When using the default layout, all pages except top-level pages will automatically have a list of 'breadcrumbs' at the top, linking to the parent page and to any higher-level ancestors.
 

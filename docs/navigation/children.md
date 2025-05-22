@@ -1,10 +1,10 @@
 ---
-title: Child Pages
-parent: Navigation
+title: 子页面
+parent: 导航
 nav_order: 4
 ---
 
-# Child Pages
+# 子页面
 
 By default, all parent pages will automatically have a so-called 'Table of Contents' at the bottom, showing links to all their child pages.
 

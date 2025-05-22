@@ -1,12 +1,12 @@
 ---
-title: Typography
-parent: Utilities
+title: 排版
+parent: CSS 实用类
 ---
 
-# Typography Utilities
+# 排版实用类
 {: .no_toc }
 
-## Table of contents
+## 目录
 {: .no_toc .text-delta }
 
 1. TOC

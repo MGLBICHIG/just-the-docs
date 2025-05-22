@@ -1,15 +1,15 @@
 ---
-title: External Links
-parent: Main Navigation
+title: 外部链接
+parent: 主导航
 nav_order: 6
 ---
 
-# External Links
+# 外部链接
 
 To add external links to the navigation, add them to the `nav_external_links` [configuration]({% link docs/configuration.md %}) option in your site's `_config.yml` file.
 External links will appear in the navigation after the links to ordinary pages, but before any collections.
 
-## Example: external links
+## 示例：外部链接
 {: .text-delta }
 
 ```yaml
@@ -21,7 +21,7 @@ nav_external_links:
     opens_in_new_tab: false # set to true to open this link in a new tab - defaults to false
 ```
 
-## Opening external links in a new tab
+## 在新标签页中打开链接
 
 The external links are decorated by an icon, which distinguishes them from internal links.
 You can suppress the icon by setting `hide_icon: true`.

@@ -1,10 +1,10 @@
 ---
-title: Ordering Pages
-parent: Main Navigation
+title: 页面排序
+parent: 主导航
 nav_order: 1
 ---
 
-# Ordering Pages
+# 页面排序
 
 To specify a page order, you can use the `nav_order` parameter in the front matter of the pages.
 

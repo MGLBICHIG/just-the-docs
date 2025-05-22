@@ -1,6 +1,6 @@
 ---
 title: 排版
-parent: UI Components
+parent: 用户界面组件
 nav_order: 1
 ---
 

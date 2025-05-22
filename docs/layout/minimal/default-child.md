@@ -1,8 +1,8 @@
 ---
-title: Default layout child page
+title: 默认版型子页面
 layout: default
-parent: A minimal layout page
-grand_parent: Layout
+parent: 迷你版型页面
+grand_parent: 页面版型
 ---
 
 # Default layout child page

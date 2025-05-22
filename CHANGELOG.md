@@ -1,5 +1,5 @@
 ---
-title: CHANGELOG
+title: 软件修补日志
 layout: default
 ---
 

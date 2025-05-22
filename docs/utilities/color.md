@@ -1,9 +1,9 @@
 ---
-title: Color
-parent: Utilities
+title: 颜色
+parent: CSS 实用类
 ---
 
-# Color Utilities
+# 颜色实用类
 {: .no_toc }
 
 ## Table of contents

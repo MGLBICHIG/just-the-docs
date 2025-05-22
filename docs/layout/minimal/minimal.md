@@ -1,7 +1,7 @@
 ---
-title: A minimal layout page
+title: 迷你版型页面
 layout: minimal
-parent: Layout
+parent: 页面版型
 ---
 
 # A minimal layout page

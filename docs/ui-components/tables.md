@@ -1,6 +1,6 @@
 ---
-title: Tables
-parent: UI Components
+title: 表格
+parent: 用户界面组件
 nav_order: 4
 ---
 

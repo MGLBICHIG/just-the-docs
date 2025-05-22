@@ -1,6 +1,6 @@
 ---
-title: Buttons
-parent: UI Components
+title: 按钮
+parent: 用户界面组件
 nav_order: 2
 ---
 

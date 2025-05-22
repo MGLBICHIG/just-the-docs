@@ -1,6 +1,6 @@
 ---
-title: Callouts
-parent: UI Components
+title: 标注
+parent: 用户界面组件
 nav_order: 7
 ---
 

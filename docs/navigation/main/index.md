@@ -1,10 +1,10 @@
 ---
-title: Main Navigation
-parent: Navigation
+title: 主导航
+parent: 导航
 nav_order: 1
 ---
 
-# Main Navigation
+# 主导航
 
 The main navigation for your Just the Docs site is at the left side of the page on large screens, and at the top (behind a tap) on small screens.
 

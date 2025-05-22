@@ -1,6 +1,6 @@
 ---
-title: Labels
-parent: UI Components
+title: 标签
+parent: 用户界面组件
 nav_order: 3
 ---
 

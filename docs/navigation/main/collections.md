@@ -1,10 +1,10 @@
 ---
-title: Collections
-parent: Main Navigation
+title: 集合
+parent: 主导航
 nav_order: 5
 ---
 
-# Collections
+# 集合
 
 By default, the navigation includes only [normal pages](https://jekyllrb.com/docs/pages/).
 However, you can configure Just the Docs to include also pages from [Jekyll collections](https://jekyllrb.com/docs/collections/).

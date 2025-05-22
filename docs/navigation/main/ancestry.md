@@ -1,10 +1,10 @@
 ---
-title: Ancestry
-parent: Main Navigation
+title: 族系
+parent: 主导航
 nav_order: 4
 ---
 
-# Ancestry
+# 族系
 
 If no two pages on your website have the same `title`, you only need to set the `parent` titles to fix the hierarchy. You can also have the same `title` on pages that have no children, provided that they have different parent pages.
 
