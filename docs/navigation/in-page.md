@@ -13,36 +13,36 @@ nav_order: 5
 1. TOC
 {:toc}
 
-To support in-page navigation, you can generate a *Table of Contents* (TOC) with links to headings, like the one shown above, as well as a link to the top of the page.
+使用页内导航可生成如上的带链接的标题 **Table of Contents**（TOC)，以及返回顶部的链接。
 
-## Generating Table of Contents
+## 生成目录
 
-To generate a *Table of Contents* in a page, you use Kramdown's `{:toc}` method, immediately after the start of a list. This will automatically generate a list of anchor links to various sections of the page, based on headings and heading levels.
+页面内生成**目录**使用 Kramdown 的 `{:toc}` 方法，可立即在页面开始处生成一个列表，列表项都带有自动生成的到页面内各层标题的页内链接。
 
 {: .note }
-`{:toc}` can be used only once on each page.
+`{:toc}` 每页仅限使用一次。
 
-You **must** have a list immediately preceding the table of contents. The type of list determines the style of your table of contents.
+在拥有目录前你**必须**写个列表，列表类型决定了目录类型。
 
-For an *ordered* table of contents, use the following markdown code:
+对于**有序**目录，用下面的 markdown 代码：
 
 ```md
 1. TOC
 {:toc}
 ```
 
-The `{:toc}` line *must* follow the `1. TOC` line, which begins a list.
+`{:toc}` 行**必须**跟在 `1. TOC` 行下面，这将生成有序列表。
 
-For an *unordered* table of contents, instead use the following markdown code:
+对于**无序**目录，用下面的 markdown 代码：
 
 ```
 - TOC
 {:toc}
 ```
 
-## Omitting Heading from Table of Contents
+## 从目录中需要忽略的标题
 
-If you want to omit a particular heading from the TOC, follow it immediately by `{: .no_toc }` (possibly together with other CSS class names).
+如果你想从目录中忽略掉特定标题，在该标题下添加 `{: .no_toc }` （可能还会有其他 CSS 类名）。
 
 ```markdown
 # In-Page Navigation
@@ -55,11 +55,11 @@ If you want to omit a particular heading from the TOC, follow it immediately by 
 {:toc}
 ```
 
-This example omits the top-level heading (`In-Page Navigation`) from the TOC, as well as the heading for the *Table of Contents* itself.
+上例从目录中忽略掉了顶级标题（`In-Page Navigation`）以及*Table of Contents*自己的标题。
 
-## Collapsible Table of Contents (with `<details>` and `<summary>`)
+## 可折叠目录（用 `<details>` 和 `<summary>` 实现）
 
-You can make the Table of Contents collapsible using the `<details>` and `<summary>` elements, as in the following example.
+你可以使用 `<details>` 和 `<summary>` 元素创建可折叠目录，如下例。
 
 ```markdown
 <details open markdown="block">
@@ -72,19 +72,16 @@ You can make the Table of Contents collapsible using the `<details>` and `<summa
 </details>
 ```
 
-The attribute `open` (which expands the Table of Contents by default) and the styling (here with `text-delta`) are optional.
+`open` 属性（默认打开目录）和样式（这里是 `text-delta`）可选。
 
-## Back to Top {#back-to-top-doc}
+## 返回顶部 {#back-to-top-doc}
 
 {: .warning }
-The default id for a section with heading "Back to Top" is `"back-to-top"`.
-To avoid invalid HTML, sites that set the `back_to_top` configuration variable
-should override the default id for such sections. The Markdown source file for
-the current page uses `## Back to Top {#back-to-top-doc}`.
+“Back to Top”标题的默认 ID 是 `"back-to-top"`。为避免 HTML 无效，站点设置 `back_to_top` 配置变量覆盖默认 ID。当前页 Markdown 源文件使用 `## Back to Top {#back-to-top-doc}`。
 
-You can add a link from the bottom of each page to its top. You do this by including the `back_to_top` configuration option in your site's `_config.yml` file, together with `back_to_top_text` for the anchor link.
+你可以为每页底部添加链接——这可以通过在站点 `_config.yml` 配置文件中设置 `back_to_top` 参数实现，还有 `back_to_top_text` 参数设置链接锚点。
 
-### Example
+### 示例
 {: .no_toc }
 
 ```yaml
@@ -93,4 +90,4 @@ back_to_top_text: "Back to top"
 ```
 
 {: .warning }
-Back-to-top links currently appear only when *other* configuration options require footer generation!
+只有当 **other** 配置项需要生成 footer 时 Back-to-top 链接才会出现！

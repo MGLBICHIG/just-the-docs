@@ -23,19 +23,19 @@ jtd.addEvent(toggleDarkMode, 'click', function(){
 
 [链接到其它页面]({{site.baseurl}}/)。
 
-There should be whitespace between paragraphs.
+通过空白行生成段落。
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+段落之间应该有空白行。我们推荐要有一个 README，或者其他有关你的项目的说明文件。
 
 # 1 级标题
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+这是一个跟随标题的普通段落。GitHub 是一个版本控制和集散的代码托管平台——它让你和其他来自世界各地的开发人员共同参与一个项目的开发。
 
 ## 2 级标题
 
-> This is a blockquote following a header.
+> 这是一个跟随标题的块引用。
 >
-> When something is important enough, you do it even if the odds are not in your favor.
+> 当有些东西很重要时，即使明知不可为也必为。
 
 ### 3 级标题
 
@@ -81,25 +81,25 @@ even when it comes at the beginning](.) of the line.
 | ok           | good `oreos`      | hmm   |
 | ok           | good `zoute` drop | yumm  |
 
-### There's a horizontal rule below this.
+### 下面这是一个水平线
 
 * * *
 
-### Here is an unordered list:
+### 这是一个无序列表：
 
 *   Item foo
 *   Item bar
 *   Item baz
 *   Item zip
 
-### And an ordered list:
+### 这是有序列表：
 
 1.  Item one
 1.  Item two
 1.  Item three
 1.  Item four
 
-### And an ordered list, continued:
+### 有一个有序列表，继续：
 
 1.  Item one
 1.  Item two
@@ -110,14 +110,14 @@ Some text
 1.  Item three
 1.  Item four
 
-### And an ordered list starting from 42:
+### 一个从 42 开始的有序列表：
 
 {:style="counter-reset:step-counter 41"}
 1.  Item 42
 1.  Item 43
 1.  Item 44
 
-### And a nested list:
+### 和一个内嵌列表：
 
 - level 1 item
   - level 2 item
@@ -133,7 +133,7 @@ Some text
   - level 2 item
 - level 1 item
 
-### Nesting an ol in ul in an ol
+### 嵌入 ol 到 ul 到 ol
 
 - level 1 item (ul)
   1. level 2 item (ol)
@@ -151,13 +151,13 @@ Some text
     - level 3 item (ul)
 - level 1 item (ul)
 
-### And a task list
+### 和一个任务列表
 
 - [ ] Hello, this is a TODO item
 - [ ] Hello, this is another TODO item
 - [x] Goodbye, this item is done
 
-### Nesting task lists
+### 嵌入任务列表
 
 - [ ] level 1 item (task)
    - [ ] level 2 item (task)
@@ -165,7 +165,7 @@ Some text
 - [ ] level 1 item (task)
 - [ ] level 1 item (task)
 
-### Nesting a ul in a task list
+### 嵌入一个 ul 到一个任务列表
 
 - [ ] level 1 item (task)
    - level 2 item (ul)
@@ -173,7 +173,7 @@ Some text
 - [ ] level 1 item (task)
 - [ ] level 1 item (task)
 
-### Nesting a task list in a ul
+### 嵌入一个任务列表到一个无序列表
 
 - level 1 item (ul)
    - [ ] level 2 item (task)
@@ -181,17 +181,17 @@ Some text
 - level 1 item (ul)
 - level 1 item (ul)
 
-### Small image
+### 小图
 
 ![](../../assets/images/small-image.jpg)
 
-### Large image
+### 大图
 
 ![](../../assets/images/large-image.jpg)
 
 "[Wroclaw University Library digitizing rare archival texts](https://www.flickr.com/photos/97810305@N08/9401451269)" by [j_cadmus](https://www.flickr.com/photos/97810305@N08) is marked with [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/?ref=openverse).
 
-### Labels
+### 标签
 
 I'm a label
 {: .label }
@@ -214,7 +214,7 @@ red
 ***bold + italic***
 {: .label }
 
-### Definition lists can be used with HTML syntax.
+### 用 HTML 语法写定义列表
 
 <dl>
 <dt>Name</dt>
@@ -227,7 +227,7 @@ red
 <dd>Green</dd>
 </dl>
 
-#### Multiple description terms and values
+#### 多术语和释义
 
 Term
 : Brief description of Term
@@ -256,7 +256,7 @@ Term2
 : Second description of Term1 and Term2,
   possibly more than one line
 
-### More code
+### 更多代码
 
 ```python{% raw %}
 def dump_args(func):
@@ -297,9 +297,9 @@ class conditions(object):
 Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
 ```
 
-### Mermaid Diagrams
+### Mermaid 图表
 
-The following code is displayed as a diagram only when a `mermaid` key supplied in `_config.yml`.
+当 `mermaid` 值在 `_config.yml` 中设定后，下面的代码会展示一个图表。
 
 ```mermaid
 graph TD;
@@ -311,17 +311,17 @@ graph TD;
     C-->D;
 ```
 
-### Collapsed Section
+### 折叠内容
 
-The following uses the [`<details>`](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-collapsed-sections) tag to create a collapsed section.
+下面使用 [`<details>`](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-collapsed-sections) 标记创建一个可折叠内容。
 
 <details markdown="block">
-<summary>Shopping list (click me!)</summary>
+<summary>购物清单（点击我！）</summary>
 
-This is content inside a `<details>` dropdown.
+这是一个置于`<details>`下拉菜单内的内容。
 
-- [ ] Apples
-- [ ] Oranges
-- [ ] Milk
+- [ ] 苹果
+- [ ] 橘子
+- [ ] 牛奶
 
 </details>

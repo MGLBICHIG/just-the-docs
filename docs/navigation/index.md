@@ -3,14 +3,14 @@ title: 导航
 nav_order: 5
 ---
 
-# Navigation
+# 导航
 
-The default page layout supports various navigation features:
+默认页面 layout 支持各种导航功能：
 
-* a **main navigation** panel, highlighting the currently selected page;
-* a list of **auxiliary** links, shown on all pages;
-* lists of **breadcrumbs**, shown on all except top level pages;
-* optional lists of links to **child pages** (so-called 'tables of contents'); and
-* section heading links for **in-page navigation**, with an optional **back-to-top** link.
+* **主导航**面板，高亮当前选择页面；
+* **auxiliary** 链接，显示所有页面；
+* **面包屑导航**除了顶级页面外都会显示；
+* 可选的**子页面**列表链接（也叫'目录'）；和
+* 基于页面标题的**页内导航**，以及可选的**返回顶部**链接。
 
-See the following pages for how to specify these features, with illustrative examples.
+查阅下面页面获取相关细节。
