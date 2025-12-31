@@ -9,7 +9,7 @@ permalink: /
 # 聚焦编写好文档
 {: .fs-9 }
 
-Just the Docs 助力文档快速启动——给你一个易定制的 Jekyll 文档主题且可在 GitHub Pages 免费托管！
+Just the Docs 助力文档编写快速上手——给你一个易定制的 Jekyll 文档主题而且可在 GitHub Pages 免费托管！
 {: .fs-6 .fw-300 }
 
 [现在上手](#快速上手){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
@@ -35,7 +35,7 @@ Jekyll 构建这个 Just the Docs 主题文档就是使用的自己的主题。�
 
 你通过发布在 [GitHub Pages] 的模板很容易就能创建站点——[模板 README] 文件解释了如何操作及其他一些细节。
 
-如果你的计算机已经安装了 [Jekyll]，你也可以在**本地**构建和预览创建的站点。这让可以在提交修改前测试预览，从而避免在只有发布到 GitHub Pages 后才能看到修改效果。[^2]当然你也可以部署你在本地构建的站点到 GitHub Pages 以外的平台。
+如果你的计算机已经安装了 [Jekyll]，你也可以在**本地**构建和预览创建的站点。这让你可以在提交修改前测试和预览站点，从而有效避免只有发布到 GitHub Pages 后才能看到修改效果。[^2]当然你也可以将你在本地构建的站点部署到 [GitHub Pages] 以外的平台。
 
 更多创建站点的特殊细节：
 
@@ -45,7 +45,7 @@ Jekyll 构建这个 Just the Docs 主题文档就是使用的自己的主题。�
 除此以外，你可以根据自己的喜好自由定制用模板创建的站点。你可以很容易的改变所使用的 `just-the-docs` 和 Jekyll 的版本，以及插件等。
 
 {: .note }
-查看主题 [README][Just the Docs README] 获取更多使用 GEM 做为主题而不是区创建站点的细节。
+查看主题 [README][Just the Docs README] 获取更多使用 GEM 做为主题而不是创建站点的细节。
 
 ## 关于本项目
 
@@ -92,7 +92,7 @@ Just the Docs 承诺发展为一个友善的社区。
 [Just the Docs 代码库]: https://github.com/just-the-docs/just-the-docs
 [Just the Docs README]: https://github.com/just-the-docs/just-the-docs/blob/main/README.md
 [GitHub Pages]: https://pages.github.com/
-[Template README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
+[模板 README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
 [GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
 [定制]: {% link docs/customization.md %}
 [使用模板]: https://github.com/just-the-docs/just-the-docs-template/generate

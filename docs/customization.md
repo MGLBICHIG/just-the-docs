@@ -14,21 +14,21 @@ nav_order: 6
 
 ---
 
-## Color schemes
+## 色系
 
-Just the Docs supports two color schemes: light (default), and dark.
+Just the Docs 支持两个色系（Color Scheme）：亮色系（light）（默认）和暗色系（dark）。
 
-To enable a color scheme, set the `color_scheme` parameter in your site's `_config.yml` file:
+启用一个色系需要在站点的 `_config.yml` 文件中设置 `color_scheme` 参数：
 
-### Example: preview dark color scheme
+### 示例：预览暗色系
 {: .no_toc .text-delta }
 
 ```yaml
-# Color scheme supports "light" (default) and "dark"
+# 色系支持亮色 "light" (默认) 和 暗色"dark"
 color_scheme: dark
 ```
 
-<button class="btn js-toggle-dark-mode">Preview dark color scheme</button>
+<button class="btn js-toggle-dark-mode">预览暗色系</button>
 
 <script>
 const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
@@ -36,26 +36,26 @@ const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
 jtd.addEvent(toggleDarkMode, 'click', function(){
   if (jtd.getTheme() === 'dark') {
     jtd.setTheme('light');
-    toggleDarkMode.textContent = 'Preview dark color scheme';
+    toggleDarkMode.textContent = '预览暗色系';
   } else {
     jtd.setTheme('dark');
-    toggleDarkMode.textContent = 'Return to the light side';
+    toggleDarkMode.textContent = '返回亮色系';
   }
 });
 </script>
 
-### deprecated: `legacy_light`
+### 已废弃： `legacy_light`
 {: .d-inline-block .no_toc }
 
-New (v0.4.2)
+新增 (v0.4.2)
 {: .label .label-green }
 
 
 In Just the Docs version `0.4.2`, we changed the default syntax highlighting theme for the `light` color scheme to have higher contrast. Users who want to use the old highlighting need to explicitly opt-in with the deprecated `legacy_light` color scheme. In a future major release of Just the Docs, we will remove this color scheme.
 
-## Custom schemes
+## 定制色系
 
-### Define a custom scheme
+### 定义一个色系
 
 You can add custom schemes.
 If you want to add a scheme named `foo` (can be any name) just add a file `_sass/color_schemes/foo.scss` (replace `foo` by your scheme name)
@@ -90,7 +90,7 @@ Instead, each variable that relies on previously-cascaded values must be manuall
 _Note:_ Editing the variables directly in `_sass/support/variables.scss` is not recommended and can cause other dependencies to fail.
 Please use scheme files.
 
-### Use a custom scheme
+### 使用定制色系
 
 To use the custom color scheme, only set the `color_scheme` parameter in your site's `_config.yml` file:
 
@@ -98,7 +98,7 @@ To use the custom color scheme, only set the `color_scheme` parameter in your si
 color_scheme: foo
 ```
 
-### Switchable custom scheme
+### 可转换定制色系
 
 If you want to be able to change the scheme dynamically, for example via javascript, just add a file `assets/css/just-the-docs-foo.scss` (replace `foo` by your scheme name)
 with the following content:
@@ -115,7 +115,7 @@ This allows you to switch the scheme via the following javascript.
 jtd.setTheme("foo")
 ```
 
-## Override and define new variables
+## 覆盖和定义新变量
 {: .d-inline-block }
 
 New (v0.4.0)
@@ -135,7 +135,7 @@ $pink-300: #dd2cd4;
 
 In particular: this file is imported *after* the theme's variables and functions are defined, but *before* any CSS classes are emitted.
 
-## Override and completely custom styles
+## 覆盖和完全定制样式
 
 For styles that aren't defined as SCSS variables, you may want to modify specific CSS classes.
 Additionally, you may want to add completely custom CSS specific to your content.
@@ -161,73 +161,73 @@ For example, if you'd like to add your own styles for printing a page, you could
 }
 ```
 
-## Override includes
+## 覆盖 includes
 
-You can customize the theme by overriding any of the custom [Jekyll includes](https://jekyllrb.com/docs/includes/) files that it provides.
+你可以通过覆盖主题提供的 [Jekyll includes](https://jekyllrb.com/docs/includes/) 文件来定制主题。
 
-To do this, create an `_includes` directory and make a copy of the specific file you wish to modify. The content in this file will override the theme defaults. You can learn more about this process in the Jekyll docs for [Overriding theme defaults](https://jekyllrb.com/docs/themes/#overriding-theme-defaults).
+要想覆盖，可以创建 `_includes` 目录，然后拷贝你要定制的文件。文件中的内容将要覆盖掉原来主题的默认文件。更多信息可以参考 Jekyll 文档的[覆盖主题默认文件](https://jekyllrb.com/docs/themes/#overriding-theme-defaults)。
 
-Just the Docs provides the following custom includes files:
+Just the Docs 提供下面可以定制的 includes 文件：
 
-### Custom TOC Heading
+### 定制 TOC 标题
 {: .d-inline-block }
 
-New (v0.4.0)
+新增 (v0.4.0)
 {: .label .label-green }
 
 `_includes/toc_heading_custom.html`
 
-If the page has any child pages, and `has_toc` is not set to `false`, this content appears as a heading above the [auto-generating list of child pages]({% link docs/navigation/children.md %}) after the page's content.
+如果一个页面有子页面且 `has_toc` 没有设置为 `false`，那么这个内容将出现在[自动生成子页面列表]({% link docs/navigation/children.md %})的顶部，其后为页面内容。
 
-#### Example: changing TOC heading
+#### 示例：修改 TOC 标题
 {: .no_toc }
 
-To change the default TOC heading to "Contents", create `_includes/toc_heading_custom.html` and add:
+修改默认 TOC 标题为 "目录"，创建 `_includes/toc_heading_custom.html` 并添加：
 ```html
-<h2 class="text-delta">Contents</h2>
+<h2 class="text-delta">目录</h2>
 ```
 
-The (optional) `text-delta` class makes the heading appear as **Contents**{:.text-delta} .
+`text-delta` 类（可选）使标题出现类似 **目录**{:.text-delta} 的效果。
 
-### Custom Footer
+### 定制 Footer
 
 `_includes/footer_custom.html`
 
-This content appears at the bottom of every page's main content. More info for this include can be found in the [Configuration - Footer content]({% link docs/configuration.md %}#footer-content).
+此内容出现每页主要内容的底端。更多关于这个 include 的信息可参考[配置 - Footer 内容]({% link docs/configuration.md %}#footer-content)。
 
-### Custom Head
+### 定制 Head
 
 `_includes/head_custom.html`
 
-Any HTML added to this file will be inserted before the closing `<head>` tag. This might include additional `<meta>`, `<link>`, or `<script>` tags.
+添加到此页的任何 HTML 都会在 `<head>` 标签关闭之前插入。这包括 `<meta>`、`<link>`、`<script>` 等。
 
-The `<head>` tag automatically includes a link to an existing favicon if you set `favicon_ico` to the corresponding path in your configuration, or if the path to the favicon is `/favicon.ico`.
+如果你在配置文件中已经设置了 `favicon_ico` 的路径，`<head>` 标签自动包含一个到已存在的 favicon 的链接，否则路径默认为 `/favicon.ico`。
 
-### Custom Header
+### 定制 Header
 
 `_includes/header_custom.html`
 
-Content added to this file appears at the top of every page's main content between the site search and auxiliary links if they are enabled. If `search_enabled` were set to false and `aux_links` were removed, the content of `header_custom.html` would occupy the space at the top of every page.
+此文件内容会出现在每页的主要内容和站点搜索之间。如果 `search_enabled` 设置为 `false` 且 `aux_links` 移除，`header_custom.html` 内容将占据每页的顶端。
 
-### Custom Nav Footer
+### 定制 Nav Footer
 {: .d-inline-block }
 
-New (v0.4.0)
+新增 (v0.4.0)
 {: .label .label-green }
 
 `_includes/nav_footer_custom.html`
 
-Any content added to this file will appear at the bottom left of the page below the site's navigation. By default an attribution to Just the Docs is displayed which reads, `This site uses Just the Docs, a documentation theme for Jekyll.`.
+此文件所有内容会出现在页面左侧的导航栏下部。默认显示为 `This site uses Just the Docs, a documentation theme for Jekyll.`。
 
-### Custom Search Placeholder
+### 定制搜索占位符
 {: .d-inline-block }
 
-New (v0.4.0)
+新增 (v0.4.0)
 {: .label .label-green }
 
 `_includes/search_placeholder_custom.html`
 
-Content added to this file will replace the default placeholder text in the search bar (and its `aria-label`), after stripping HTML and leading/trailing whitespace. By default, the content of the include is:
+添加到这个文件的内容将替换搜索框默认的占位文字 (and its `aria-label`)，同时去掉 HTML 标签和开始/结尾的空白。默认内容包含：
 
 {% raw %}
 
@@ -237,7 +237,7 @@ Search {{site.title}}
 
 {% endraw %}
 
-Override this file to render a custom placeholder. One common use-case is internationalization; for example,
+覆盖这个文件重新渲染定制的占位符。常用于国际化，例如
 
 {% raw %}
 
@@ -247,24 +247,24 @@ Chercher notre site
 
 {% endraw %}
 
-would make the placeholder text "Chercher notre site". [Liquid code](https://jekyllrb.com/docs/liquid/) (including [Jekyll variables](https://jekyllrb.com/docs/variables/)) is also supported.
+占位符为 "Chercher notre site"。[Liquid 代码](https://jekyllrb.com/docs/liquid/) (支持包含 [Jekyll 变量](https://jekyllrb.com/docs/variables/))。
 
-## Custom layouts and includes
+## 定制 layouts 和 includes
 {: .d-inline-block }
 
-New (v0.4.0)
+新增 (v0.4.0)
 {: .label .label-green }
 
-Advanced
+高级
 {: .label .label-yellow }
 
-Just the Docs uses Jekyll's powerful [layouts](https://jekyllrb.com/docs/layouts/) and [includes](https://jekyllrb.com/docs/includes/) features to generate and compose various elements of the site. Jekyll users and developers can extend or replace existing layouts and includes to customize the entire site layout.
+Just the Docs 利用 Jekyll 的高效 [layouts](https://jekyllrb.com/docs/layouts/) 和 [includes](https://jekyllrb.com/docs/includes/) 特色生成和组合各种站点元素。Jekyll 用户和开发者可以扩展或者替换已存在的 layouts 和 includes 来定制整个站点 layout。
 
-### Default layout and includable components
+### 默认 layout 和可包含组件
 
-The `default` layout is inherited by most of the "out-of-the-box" pages provided by Just the Docs. It composes various re-usable components of the site, including the sidebar, navbar, footer, breadcrumbs, and various imports. Most users who create new pages or layouts will inherit from `default`.
+`default` 版式被 Just the Docs 的绝大部分“开箱即用”页面继承。它由各种可重用组件构成——sidebar、navbar、footer、breadcrumbs 和各种的导入组件。大部分用户创建新页面或者 layouts 都要从 `default` 继承。
 
-Here is a simplified code example of what it looks like:
+这是一个简化的代码示例：
 
 {% raw %}
 
@@ -303,7 +303,7 @@ Here is a simplified code example of what it looks like:
 
 {% endraw %}
 
-#### Component summary
+#### 组件概述
 {: .no_toc }
 
 {: .warning }
@@ -326,7 +326,7 @@ Each of these components can be overridden individually using the same process d
 
 Future versions may subdivide components further; we guarantee that we will only place them in folders (ex `components/`, `icons/`, or a new `js/`) to avoid top-level namespace collisions.
 
-### Alternative layouts and example (`minimal`)
+### 替换 layouts 和示例 (`minimal`)
 
 Users can develop custom layouts that compose, omit, or add components differently. We provide one first-class example titled `minimal`, which disables the navigation sidebar. To see an example, visit the [minimal layout test]({{site.baseurl}}/docs/minimal-test/) page.
 
@@ -345,7 +345,7 @@ title: Minimal layout test
 
 Similarly, users and developers can create other alternative layouts using Just the Docs' reusable includable components.
 
-### Default layout and inheritance chain
+### 默认 layout 和继承链
 
 Under the hood,
 
@@ -354,7 +354,7 @@ Under the hood,
 
 The `minimal` layout inherits from the `default` but assigns `nav_enabled: false` to disable the navigation sidebar.
 
-### Overridden default Jekyll layouts
+### 覆盖默认 Jekyll layouts
 
 By default, Jekyll (and its default theme `minima`) provide the `about`, `home`, `page`, and `post` layouts. In Just the Docs, we override all of these layouts with the `default` layout. Each of those layouts is simply:
 
