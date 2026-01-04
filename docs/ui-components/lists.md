@@ -4,10 +4,10 @@ parent: 用户界面组件
 nav_order: 5
 ---
 
-# Lists
+# 列表
 {: .no_toc }
 
-## Table of contents
+## 页内导航
 {: .no_toc .text-delta }
 
 1. TOC
@@ -15,9 +15,9 @@ nav_order: 5
 
 ---
 
-Most lists can be rendered with pure Markdown.
+大多列表都可以使用纯 Markdown 生成。
 
-## Unordered list
+## 无序列标
 
 <div class="code-example" markdown="1">
 - Item 1
@@ -42,7 +42,7 @@ _or_
 * Item 3
 ```
 
-## Ordered list
+## 有序列标
 
 <div class="code-example" markdown="1">
 1. Item 1
@@ -55,7 +55,7 @@ _or_
 1. Item 3
 ```
 
-## Task list
+## 任务列表
 
 <div class="code-example" markdown="1">
 - [ ] hello, this is a todo item
@@ -68,9 +68,9 @@ _or_
 - [x] goodbye, this item is done
 ```
 
-## Definition list
+## 术语列表
 
-Definition lists require HTML syntax and aren't supported with the GitHub Flavored Markdown compiler.
+术语列表需要 HTML 语法，同时注意 GitHub Flavored Markdown 编译器不支持。
 
 <div class="code-example" markdown="1">
 <dl>

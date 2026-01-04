@@ -3,7 +3,7 @@ title: 行号
 parent: 代码
 ---
 
-# Code Snippets with Line Numbers
+# 带行号的代码片段
 
 {: .warning }
 In prior versions of the docs, we provided "workarounds" to rendering issues arising from code snippets with line numbers. While these seemed to resolve visual layout issues, they did not resolve core issues with Jekyll generating invalid HTML. See [the detailed explanation](#detailed-error-explanation) for more information.

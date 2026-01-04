@@ -1,10 +1,10 @@
 ---
-title: CSS 实用类
+title: CSS 工具类
 nav_order: 4
 ---
 
-# CSS 实用类
+# CSS 工具类
 {: .no_toc }
 
-CSS utility classes come in handy when you want to override default styles to create additional whitespace (margins/padding), correct unexpected shifts in font size or weight, add color, or hide (or show) something at a specific screen size.
+CSS 工具类是为了方便覆盖默认样式而创建附加的空格（margins/padding），纠正不想要的字号、粗细、增色或者在特定大小的屏幕上隐藏（显示）某些细节等。
 {: .fs-6 .fw-300 }

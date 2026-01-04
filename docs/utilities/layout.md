@@ -1,6 +1,6 @@
 ---
 title: 页面版型
-parent: CSS 实用类
+parent: CSS 工具类
 ---
 
 # 版型实用类
@@ -14,11 +14,11 @@ parent: CSS 实用类
 
 ---
 
-## Spacing
+## 留白
 
-These spacers are available to use for margins and padding with responsive utility classes. Combine these prefixes with a screen size and spacing scale to use them responsively.
+这些留白用于自适应的外边距（margin）和内边距（padding）工具类。联合使用这些前缀与屏幕尺寸和留白标准将会使其具有自适应性。
 
-| Classname prefix | Related CSS Property          |
+| 类名前缀        | 相关 CSS 属性                |
 |:-----------------|:------------------------------|
 | `.m-`            | `margin`                      |
 | `.mx-`           | `margin-left`, `margin-right` |
@@ -28,7 +28,7 @@ These spacers are available to use for margins and padding with responsive utili
 | `.mb-`           | `margin-bottom`               |
 | `.ml-`           | `margin-left`                 |
 
-| Classname prefix | Related CSS Property            |
+| 类名前缀        | 相关 CSS 属性                  |
 |:-----------------|:--------------------------------|
 | `.p-`            | `padding`                       |
 | `.px-`           | `padding-left`, `padding-right` |
@@ -38,7 +38,7 @@ These spacers are available to use for margins and padding with responsive utili
 | `.pb-`           | `padding-bottom`                |
 | `.pl-`           | `padding-left`                  |
 
-Spacing values are based on a `1rem = 16px` spacing scale, broken down into these units:
+留白值基于 `1rem = 16px` 标准，对应换算单位：
 
 | Spacer/suffix  | Size in rems  | Rem converted to px |
 |:---------------|:--------------|:--------------------|
@@ -52,12 +52,12 @@ Spacing values are based on a `1rem = 16px` spacing scale, broken down into thes
 | `8`            | 3rem          | 48px                |
 | `auto`         | auto          | auto                |
 
-Use `mx-auto` to horizontally center elements.
+用 `mx-auto` 来水平居中元素。
 
-### Applying Spacing Utilities with `{: }`
+### 用 `{: }` 应用留白工具类
 {: .no_toc .text-delta }
 
-In Markdown, use the `{: }` wrapper to apply custom classes:
+在 Markdown 中用 `{: }` 包裹应用的定制类：
 
 ```markdown
 This paragraph will have a margin bottom of 1rem/16px on large screens.
@@ -67,7 +67,7 @@ This paragraph will have 2rem/32px of padding on the right and left at all scree
 {: .px-6 }
 ```
 
-## Horizontal Alignment
+## 水平对齐
 
 | CSS Class               | Applied CSS Declaration          |
 |:------------------------|:---------------------------------|
@@ -78,9 +78,9 @@ This paragraph will have 2rem/32px of padding on the right and left at all scree
 | `.flex-justify-between` | `justify-content: space-between` |
 | `.flex-justify-around`  | `justify-content: space-around`  |
 
-_Note: any of the `flex-` classes must be used on a parent element that has `d-flex` applied to it._
+_注意：任何 `flex-` 类必须用于上级元素应用了 `d-flex` 类的容器才可以。_
 
-## Vertical Alignment
+## 垂直对齐
 
 | CSS Class              | Applied CSS Declaration         |
 |:-----------------------|:--------------------------------|
@@ -91,9 +91,9 @@ _Note: any of the `flex-` classes must be used on a parent element that has `d-f
 | `.v-align-text-top`    | `vertical-align: text-top`      |
 | `.v-align-top`         | `vertical-align: top`           |
 
-## Display
+## 显示
 
-Display classes aid in adapting the layout of the elements on a page:
+显示类用于调整页面的元素布局：
 
 | CSS Class         | Applied CSS Declaration |
 |:------------------|:------------------------|
@@ -103,12 +103,12 @@ Display classes aid in adapting the layout of the elements on a page:
 | `.d-inline-block` | `display: inline-block` |
 | `.d-none`         | `display: none`         |
 
-Use these classes in conjunction with the responsive modifiers.
+这些类用于结合自适应修饰符使用。
 
-### Applying Display Utilities with `{: }`
+### 用 `{: }` 应用显示工具类
 {: .no_toc .text-delta }
 
-In Markdown, use the `{: }` wrapper to apply custom classes:
+在 Markdown 中用 `{: }` 包裹应用定制工具类：
 
 ```markdown
 This button will be hidden until medium screen sizes:

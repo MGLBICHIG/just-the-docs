@@ -4,10 +4,10 @@ parent: 用户界面组件
 nav_order: 1
 ---
 
-# Typography
+# 排版
 {: .no_toc }
 
-## Table of contents
+## 页内目录
 {: .no_toc .text-delta }
 
 1. TOC
@@ -15,9 +15,9 @@ nav_order: 1
 
 ---
 
-## Font stack
+## 字体栈
 
-By default, Just the Docs uses a native system font stack for sans-serif fonts:
+默认情况下，Just the Docs 使用原生的基于 sans-serif 字体的字体栈：
 
 ```scss
 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Segoe UI Emoji"
@@ -27,7 +27,7 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZ
 abcdefghijklmnopqrstuvwxyz
 {: .fs-5 .ls-10 .code-example }
 
-For monospace type, like code snippets or the `<pre>` element, Just the Docs uses a native system font stack for monospace fonts:
+对于等宽类型，例如代码片段或者 `<pre>` 元素，Just the Docs 使用原生系统字体栈：
 
 ```scss
 "SFMono-Regular", Menlo, Consolas, Monospace
@@ -39,11 +39,11 @@ abcdefghijklmnopqrstuvwxyz
 
 ---
 
-## Responsive type scale
+## 自适应类型标准
 
-Just the Docs uses a responsive type scale that shifts depending on the viewport size.
+Just the Docs 用一个自适应类型标准应对 Viewport 型号。
 
-| Selector              | Small screen size `font-size`    | Large screen size `font-size` |
+| 选择器              | 小屏类型 `font-size`    | 大屏类型 `font-size` |
 |:----------------------|:---------------------------------|:------------------------------|
 | `h1`, `.text-alpha`   | 32px                             | 36px                          |
 | `h2`, `.text-beta`    | 18px                             | 24px                          |
@@ -55,9 +55,9 @@ Just the Docs uses a responsive type scale that shifts depending on the viewport
 
 ---
 
-## Headings
+## 标题
 
-Headings are rendered like this:
+标题渲染如：
 
 <div class="code-example">
 <h1>Heading 1</h1>
@@ -78,9 +78,9 @@ Headings are rendered like this:
 
 ---
 
-## Body text
+## 正文字体
 
-Default body text is rendered like this:
+默认正文字体渲染如：
 
 <div class="code-example" markdown="1">
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -91,23 +91,23 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 ---
 
-## Inline elements
+## 行内元素
 
 <div class="code-example" markdown="1">
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+文字可以**加粗**，变_斜体_，或者加上~~横穿线~~。
 
-[Link to another page]({{site.baseurl}}/).
+[链接到另一个页面]({{site.baseurl}}/).
 </div>
 ```markdown
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+文字可以**加粗**，变_斜体_，或者加上~~横穿线~~。
 
-[Link to another page]({{site.baseurl}}/).
+[链接到另一个页面]({{site.baseurl}}/).
 ```
 
 ---
 
-## Typographic Utilities
+## 排版工具
 
-There are a number of specific typographic CSS classes that allow you to override default styling for font size, font weight, line height, and capitalization.
+大量定制的排版工具类可以让你可以覆盖默认的样式（字号、粗细、行高和首字母大小写等）从而自由发挥和定制。
 
-[View typography utilities]({% link docs/utilities/typography.md %}){: .btn .btn-outline }
+[查看排版工具类]({% link docs/utilities/typography.md %}){: .btn .btn-outline }

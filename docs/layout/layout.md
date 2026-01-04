@@ -6,18 +6,18 @@ nav_order: 4.5
 
 # 页面版型
 
-You specify the layout for a page in its [front matter]. Just the Docs has a `default` layout with a sidebar, used for almost all pages in the theme docs, and a `minimal` layout that omits the sidebar.
+页面的版型在 [front matter] 中指定。Just the Docs 几乎用于所有主题文档页面 `default` 版型有边栏，还有一个没有边栏的 `minimal` 版型。
 {: .fs-6 .fw-300 }
 
-## The layout concept
+## 版型概念
 
-See the [Jekyll docs page about layouts] for an explanation of the general idea of layouts and how to specify them.
+查看 [Jekyll 关于版型的文档页面]获取版型的基本理念和如何定制他们。
 
-You can use [Jekyll's front matter defaults] to specify the same layout for many pages.
+你可以通过用 [Jekyll 的默认 front matter] 来为一些页面指定相同版型。
 
-## The `default` layout
+## 默认 `default` 版型
 
-This page uses the default layout. This site configures `layout: default` as a [front matter default](https://jekyllrb.com/docs/configuration/front-matter-defaults/) value for all pages in the `docs` directory.
+本页面就是用了默认版型。本站配置为所有 `docs` 目录的页面设定 `layout: default` 做为[默认 front matter](https://jekyllrb.com/docs/configuration/front-matter-defaults/) 值。
 
 The default layout of Just the Docs is a *responsive* layout: on medium and larger width displays, it displays a sidebar, including a navigation panel; on smaller width displays, the sidebar is automatically hidden under a button.
 
@@ -47,6 +47,6 @@ nav_enabled: true
 Just the Docs has further layouts: `about`, `home`, `page`, and `post`. Currently, they are all based on the `default` layout. See the [Jekyll docs about inheritance] for how to customize them.
 
 [front matter]: https://jekyllrb.com/docs/front-matter/ "Jekyll docs about front matter"
-[Jekyll docs page about layouts]: https://jekyllrb.com/docs/layouts/ "Jekyll docs about layouts"
-[Jekyll's front matter defaults]: https://jekyllrb.com/docs/configuration/front-matter-defaults/ "Jekyll docs about front matter defaults"
+[Jekyll 关于版型的文档页面]: https://jekyllrb.com/docs/layouts/ "Jekyll docs about layouts"
+[Jekyll 的默认 front matter]: https://jekyllrb.com/docs/configuration/front-matter-defaults/ "Jekyll docs about front matter defaults"
 [Jekyll docs about inheritance]: https://jekyllrb.com/docs/layouts/#inheritance "Jekyll docs about inheritance"

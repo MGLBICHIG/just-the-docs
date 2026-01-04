@@ -4,45 +4,47 @@ parent: 用户界面组件
 nav_order: 3
 ---
 
-# Labels
+# 标贴
 
-Use labels as a way to add an additional mark to a section of your docs. Labels come in a few colors. By default, labels will be blue.
+标贴[^label]是文档中标记文字的一种附加方式。标贴通常会配以特殊颜色，默认为蓝色。
+
+[^label]: label 翻译为标贴，类似冰箱贴的一种文字标识。同时为了同 Tag（标签）区别开，所以叫做标贴。
 
 <div class="code-example" markdown="1">
-Default label
+默认标贴
 {: .label }
 
-Blue label
+蓝色标贴
 {: .label .label-blue }
 
-Stable
+稳定
 {: .label .label-green }
 
-New release
+新版
 {: .label .label-purple }
 
-Coming soon
+即将登场
 {: .label .label-yellow }
 
-Deprecated
+弃用
 {: .label .label-red }
 </div>
 ```markdown
-Default label
+默认标贴
 {: .label }
 
-Blue label
+蓝色标贴
 {: .label .label-blue }
 
-Stable
+稳定
 {: .label .label-green }
 
-New release
+新版
 {: .label .label-purple }
 
-Coming soon
+即将登场
 {: .label .label-yellow }
 
-Deprecated
+弃用
 {: .label .label-red }
 ```

@@ -4,25 +4,25 @@ parent: 用户界面组件
 nav_order: 7
 ---
 
-# Callouts
+# 标注
 {: .d-inline-block }
 
-New (v0.4.0)
+新增 (v0.4.0)
 {: .label .label-green }
 
-Markdown does not include support for callouts. However, you can style text as a callout using a Markdown extension supported by kramdown: [*block IALs*](https://kramdown.gettalong.org/quickref.html#block-attributes).
+Markdown 本身不支持标注，但是你可以通过 Markdown 的扩展——kramdown 的 [*block IALs*](https://kramdown.gettalong.org/quickref.html#block-attributes) 将文字样式定义为标注样式。
 
-Common kinds of callouts include `highlight`, `important`, `new`, `note`, and `warning`.
+常用标注包括高亮（`highlight`）、重要（`important`）、新增（`new`）、谨记（`note`）和警告（`warning`）。
 
 {: .warning }
-These callout names are *not* pre-defined by the theme: you need to define your own names.
+这些标注的名字**并非**主题预置：你需要自行定制名字。
 
-When you have [configured]({% link docs/configuration.md %}#callouts) the  `color` and (optional) `title` for a callout, you can apply it to a paragraph, or to a block quote with several paragraphs, as illustrated below.[^postfix]
+只有你在[配置]({% link docs/configuration.md %}#callouts)完标注的 `color` 和 `title`（可选）后才算激活标注，然后才能将其用于段落或者带有几个段落的引用块等，示例如下：[^postfix]
 
 [^postfix]:
-    You can put the callout markup either before or after its content.
+    标注的标记出现在内容的前面或者后面都可以。
 
-## An untitled callout
+## 一个未命名的标注
 {: .no_toc .text-delta }
 
 ```markdown
@@ -34,7 +34,7 @@ A paragraph
 A paragraph
 
 
-## A single paragraph callout
+## 一个单独段落的标注
 {: .no_toc .text-delta }
 
 ```markdown
@@ -57,7 +57,7 @@ A paragraph
 >
 > A paragraph with a custom title callout
 
-## A multi-paragraph callout
+## 多段落标注
 {: .no_toc .text-delta }
 
 ```markdown
@@ -96,7 +96,7 @@ A paragraph
 >
 > The last paragraph
 
-## An indented callout
+## 缩进的标注
 {: .no_toc .text-delta }
 
 ```markdown
@@ -107,7 +107,7 @@ A paragraph
 > {: .highlight }
   A paragraph
 
-## Indented multi-paragraph callouts
+## 缩进的多段标注
 {: .no_toc .text-delta }
 
 ```markdown
@@ -127,7 +127,7 @@ A paragraph
 > > The last paragraph
 
 
-## Nested callouts
+## 内嵌的标注
 {: .no_toc .text-delta }
 
 ```markdown
@@ -140,7 +140,7 @@ A paragraph
 > {: .warning }
 > A paragraph
 
-## Opaque background
+## 背景不透明
 {: .no_toc .text-delta }
 
 ```markdown

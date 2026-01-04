@@ -1,6 +1,6 @@
 ---
 title: 排版
-parent: CSS 实用类
+parent: CSS 工具类
 ---
 
 # 排版实用类
@@ -14,11 +14,11 @@ parent: CSS 实用类
 
 ---
 
-## Font size
+## 字号
 
-Use the `.fs-1` - `.fs-10` to set an explicit `font-size`.
+用 `.fs-1` 到 `.fs-10` 精准设置 `font-size`。
 
-| Class   | Small screen size `font-size`  | Large screen size `font-size` |
+| 类   | 小屏字号 `font-size`  | 大屏字号 `font-size` |
 |:--------|:-------------------------------|:------------------------------|
 | `.fs-1` | 9px                            | 10px                          |
 | `.fs-2` | 11px                           | 12px                          |
@@ -32,29 +32,29 @@ Use the `.fs-1` - `.fs-10` to set an explicit `font-size`.
 | `.fs-10`| 42px                           | 48px                          |
 
 <div class="code-example" markdown="1">
-Font size 1
+Font size 1 一号字
 {: .fs-1 }
-Font size 2
+Font size 2 二号字
 {: .fs-2 }
-Font size 3
+Font size 3 三号字
 {: .fs-3 }
-Font size 4
+Font size 4 四号字
 {: .fs-4 }
-Font size 5
+Font size 5 五号字
 {: .fs-5 }
-Font size 6
+Font size 6 六号字
 {: .fs-6 }
-Font size 7
+Font size 7 七号字
 {: .fs-7 }
-Font size 8
+Font size 8 八号字
 {: .fs-8 }
-Font size 9
+Font size 9 九号字
 {: .fs-9 }
-Font size 10
+Font size 10 十号字
 {: .fs-10 }
 </div>
 ```markdown
-In Markdown, use the `{: }` wrapper to apply custom classes:
+用 Markdown，使用 `{: }` 包裹要定制的类：
 
 Font size 1
 {: .fs-1 }
@@ -80,16 +80,16 @@ Font size 10
 
 ## Font weight
 
-Use the `.fw-300` - `.fw-700` to set an explicit `font-weight`.
+用 `.fw-300` 到 `.fw-700` 精准设置 `font-weight`。
 
 <div class="code-example" markdown="1">
-Font weight 300
+Font weight 300 三百
 {: .fw-300 }
-Font weight 400
+Font weight 400 四百
 {: .fw-400 }
-Font weight 500
+Font weight 500 五百
 {: .fw-500 }
-Font weight 700
+Font weight 700 七百
 {: .fw-700 }
 </div>
 ```markdown
@@ -105,27 +105,27 @@ Font weight 700
 {: .fw-700 }
 ```
 
-## Line height
+## 行高
 
-Use the `lh-` classes to explicitly apply line height to text.
+用 `lh-` 类精准为文字设置行高。
 
-| Class         | `line-height` value  | Notes                         |
+| 类         | `line-height` 值  | 说明                         |
 |:--------------|:---------------------|:------------------------------|
 | `.lh-0`       | 0                    |                               |
-| `.lh-tight`   | 1.1                  | Default for headings          |
-| `.lh-default` | 1.4                  | Default for body (paragraphs) |
+| `.lh-tight`   | 1.1                  | 标题默认          |
+| `.lh-default` | 1.4                  | 正文（段落）默认 |
 
 <div class="code-example" markdown="1">
-No Line height
-No Line height
+No Line height 没有行高
+No Line height 没有行高
 {: .lh-0 }
 
-Tight line height
-Tight line height
+Tight line height 紧凑行高
+Tight line height 紧凑行高
 {: .lh-tight }
 
-Default line height
-Default line height
+Default line height 默认行高
+Default line height 默认行高
 {: .fh-default }
 </div>
 ```markdown
@@ -144,11 +144,11 @@ Default line height
 {: .fh-default }
 ```
 
-## Text justification
+## 文本对齐
 
-By default text is justified left. Use these `text-` classes to override settings:
+默认情况下，文字左对齐，使用 `text-` 类覆盖默认设置：
 
-| Class          | What it does         |
+| 类          | 效果         |
 |:---------------|:---------------------|
 | `.text-left`   | `text-align: left`   |
 | `.text-right`  | `text-align: right`  |

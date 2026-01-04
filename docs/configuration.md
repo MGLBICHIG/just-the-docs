@@ -6,10 +6,10 @@ nav_order: 2
 # 配置
 {: .no_toc }
 
-Just the Docs 有些配置参数可以在你的 Jekyll 站点的 \_config.yml 文件中设定。
+Just the Docs 是 Jekyll 的主题，所以有些参数需要在站点的 Jekyll 配置文件 \_config.yml 文件中设定。
 {: .fs-6 .fw-300 }
 
-## 目录
+## 页面目录
 {: .no_toc .text-delta }
 
 1. TOC
@@ -17,155 +17,155 @@ Just the Docs 有些配置参数可以在你的 Jekyll 站点的 \_config.yml �
 
 ---
 
-View this site's [\_config.yml](https://github.com/just-the-docs/just-the-docs/tree/main/_config.yml) file as an example.
+查看站点的 [\_config.yml](https://github.com/just-the-docs/just-the-docs/tree/main/_config.yml) 文件示例。
 
 ## 站点 logo
 
 ```yaml
-# Set a path/url to a logo that will be displayed instead of the title
+# 设置一个指向站点要显示的 Logo 路径或者 URL，替换原来的站点标题
 logo: "/assets/images/just-the-docs.png"
 ```
 
 ## 站点 favicon
 
 ```yaml
-# Set a path/url to a favicon that will be displayed by the browser
+# 设置要浏览器显示的 favicon 的路径或者 URL
 favicon_ico: "/assets/images/favicon.ico"
 ```
 
-If the path to your favicon is `/favicon.ico`, you can leave `favicon_ico` unset.
+如果站点的 favicon 路径是 `/favicon.ico`，可以不设置，因为系统默认就是。
 
 ## 搜索
 
 ```yaml
-# Enable or disable the site search
-# Supports true (default) or false
+# 启用或者关闭站点搜索
+# 支持布尔值 true （默认）或者 false
 search_enabled: true
 
 search:
-  # Split pages into sections that can be searched individually
-  # Supports 1 - 6, default: 2
+  # 将页面分为可独立搜索的碎片
+  # 支持值 1 - 6，默认值是 2
   heading_level: 2
-  # Maximum amount of previews per search result
-  # Default: 3
+  # 每个搜索结果容许的最多条目数
+  # 默认值为 3
   previews: 3
-  # Maximum amount of words to display before a matched word in the preview
-  # Default: 5
+  # 预览命中结果前最多显示单词数目
+  # 默认值为 5
   preview_words_before: 5
-  # Maximum amount of words to display after a matched word in the preview
-  # Default: 10
+  # 预览结果命中后最多显示单词数目
+  # 默认值为 10
   preview_words_after: 10
-  # Set the search token separator
-  # Default: /[\s\-/]+/
-  # Example: enable support for hyphenated search words
+  # 设置搜索的词根分割符
+  # 默认值为 /[\s\-/]+/
+  # 示例：启用连接符号作为检索词
   tokenizer_separator: /[\s/]+/
-  # Display the relative url in search results
-  # Supports true (default) or false
+  # 检索结果中显示相对 URL
+  # 支持布尔值 true （默认）或者 false
   rel_url: true
-  # Enable or disable the search button that appears in the bottom right corner of every page
-  # Supports true or false (default)
+  # 启用或者关闭在每页的右下角出现的搜索按钮
+  # 支持布尔值 true 或者 false （默认值）
   button: false
-  # Focus the search input by pressing `ctrl + focus_shortcut_key` (or `cmd + focus_shortcut_key` on macOS)
+  # 通过按压 `ctrl + focus_shortcut_key` （或在 macOS 系统上的 `cmd + focus_shortcut_key`）聚焦搜索框)
   focus_shortcut_key: 'k'
 ```
 
 ## Mermaid 表
 {: .d-inline-block }
 
-New (v0.4.0)
+新功能 (v0.4.0)
 {: .label .label-green }
 
-The minimum configuration requires the key for `version` ([from jsDelivr](https://cdn.jsdelivr.net/npm/mermaid/)) in `_config.yml`:
+至少需要在 `_config.yml` 中设置 `version` ([from jsDelivr](https://cdn.jsdelivr.net/npm/mermaid/)) 关键字：
 
 ```yaml
 mermaid:
-  # Version of mermaid library
-  # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
+  # Mermaid 库的版本
+  # 从 https://cdn.jsdelivr.net/npm/mermaid/ 挑选一个可用版本
   version: "9.1.3"
 ```
 
-Provide a `path` instead of a `version` key to load the mermaid library from a local file.
+如果是从本地文件加载 Mermaid 库需要将关键字 `version` 替换为 `path`。
 
-See [the Code documentation]({% link docs/ui-components/code/index.md %}#mermaid-diagram-code-blocks) for more configuration options and information.
+更多配置信息查阅[代码文档]({% link docs/ui-components/code/index.md %}#mermaid-diagram-code-blocks)。
 
 ## Aux links
 
 ```yaml
-# Aux links for the upper right navigation
+# Aux links 在导航的右上方
 aux_links:
   "Just the Docs on GitHub":
     - "//github.com/just-the-docs/just-the-docs"
 
-# Makes Aux links open in a new tab. Default is false
+# 可以使 Aux links 在新标签页打开。默认 false
 aux_links_new_tab: false
 ```
 
 ## 边栏导航
 
 ```yaml
-# Enable or disable the side/mobile menu globally
-# Nav menu can also be selectively enabled or disabled using page variables or the minimal layout
+# 启用或者关闭边栏/移动设备上的菜单
+# 导航菜单也可以用页面变量或者采用 minimal 版式或者选择性的启用或者关闭
 nav_enabled: true
 ```
 
-## Heading anchor links
+## 标题锚点链接
 
 ```yaml
-# Heading anchor links appear on hover over h1-h6 tags in page content
-# allowing users to deep link to a particular heading on a page.
+# 标题锚点链接当在页面内容的 h1 到 h6 的标题上悬停时会出现，
+# 用于读者在一个页面内需要精准定位到特定标题。
 #
-# Supports true (default) or false
+# 支持布尔值 true （默认）或者 false
 heading_anchors: true
 ```
 
-## External navigation links
+## 扩展导航链接
 {: .d-inline-block }
 
-New (v0.4.0)
+新增 (v0.4.0)
 {: .label .label-green }
 
-External links can be added to the navigation through the `nav_external_links` option.
-See [Navigation Structure]({% link docs/navigation/main/external.md %}) for more details.
+扩展链接可以通过 `nav_external_links` 选项添加到导航。查阅[导航结构]({% link docs/navigation/main/external.md %})获取更多信息。
 
-## Footer content
+## Footer 内容
 
 ```yaml
-# Footer content
-# appears at the bottom of every page's main content
-# Note: The footer_content option is deprecated and will be removed in a future major release. Please use `_includes/footer_custom.html` for more robust
-markup / liquid-based content.
+# Footer 内容
+# 出现在每页主要内容底部
+# 注意：footer_content option 选项已经废弃，而且会在将来的主要版本中剔除。推荐使用 `_includes/footer_custom.html`
+# 内容基于标记语言 liquid。
 footer_content: "Copyright &copy; 2017-2020 Patrick Marsceill. Distributed by an <a href=\"https://github.com/just-the-docs/just-the-docs/tree/main/LICENSE.txt\">MIT license.</a>"
 
-# Footer last edited timestamp
-last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
-last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
+# Footer 最后修改时间戳
+last_edit_timestamp: true # 显示或隐藏编辑时间 - 页面必须有 `last_modified_date` 在 frontmatter 中定义
+last_edit_time_format: "%b %e %Y at %I:%M %p" # 使用 Ruby 时间格式: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
 
-# Footer "Edit this page on GitHub" link text
-gh_edit_link: true # show or hide edit this page link
+# Footer 链接文字"在 GitHub 编辑此页内容"
+gh_edit_link: true # 显示或隐藏编辑此页的链接
 gh_edit_link_text: "Edit this page on GitHub."
-gh_edit_repository: "https://github.com/just-the-docs/just-the-docs" # the github URL for your repo
-gh_edit_branch: "main" # the branch that your docs is served from
-# gh_edit_source: docs # the source that your files originate from
-gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
+gh_edit_repository: "https://github.com/just-the-docs/just-the-docs" # 你的代码托管库的 GitHug URL
+gh_edit_branch: "main" # 你的文档服务分支
+# gh_edit_源：docs
+# 你的文件来自哪里
+gh_edit_view_mode: "tree" # "tree" 或者如果你想让你的用户马上成为编者启用 "edit"
 ```
+{: .note}
+_注意：`footer_content` 已经废弃，但是目前仍然支持。为了有更好的体验我们已经将其移入 `_includes/footer_custom.html`，因为这样更能体现体现纯标记和基于 Liquid 的内容_
 
-_note: `footer_content` is deprecated, but still supported. For a better experience we have moved this into an include called `_includes/footer_custom.html` which will allow for robust markup / liquid-based content._
+- "页面最后编辑时间" 数据只有在页面有一个关键词叫做 `last_modified_date` 时显示，格式用某些可读时间格式
+- `last_edit_time_format` 使用 Ruby 的 DateTime 格式化输出；示例请参考[官方 Ruby 文档关于 `strftime` 格式](https://docs.ruby-lang.org/en/master/strftime_formatting_rdoc.html)获取更多信息
+- `gh_edit_repository` 是项目在 GitHub 仓库的 URL
+- `gh_edit_branch` 是文档站点服务的分支，默认为 `main`
+- `gh_edit_source` 工程文件存储的源目录（应该同[site.source](https://jekyllrb.com/docs/configuration/options/)一样）
+- `gh_edit_view_mode` 默认为 `"tree"`，会带用户进入 GitHub 的页面，转换为 `"edit"` 将带用户进入编辑模式
 
-- the "page last modified" data will only display if a page has a key called `last_modified_date`, formatted in some readable date format
-- `last_edit_time_format` uses Ruby's DateTime formatter; for examples and information, please refer to the [official Ruby docs on `strftime` formatting](https://docs.ruby-lang.org/en/master/strftime_formatting_rdoc.html)
-- `gh_edit_repository` is the URL of the project's GitHub repository
-- `gh_edit_branch` is the branch that the docs site is served from; defaults to `main`
-- `gh_edit_source` is the source directory that your project files are stored in (should be the same as [site.source](https://jekyllrb.com/docs/configuration/options/))
-- `gh_edit_view_mode` is `"tree"` by default, which brings the user to the github page; switch to `"edit"` to bring the user directly into editing mode
-
-## Color scheme
+## 色系
 
 ```yaml
 # Color scheme supports "light" (default) and "dark"
 color_scheme: dark
 ```
 
-<button class="btn js-toggle-dark-mode">Preview dark color scheme</button>
+<button class="btn js-toggle-dark-mode">预览暗色系</button>
 
 <script>
 const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
@@ -173,23 +173,26 @@ const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
 jtd.addEvent(toggleDarkMode, 'click', function(){
   if (jtd.getTheme() === 'dark') {
     jtd.setTheme('light');
-    toggleDarkMode.textContent = 'Preview dark color scheme';
+    toggleDarkMode.textContent = '预览暗色系';
   } else {
     jtd.setTheme('dark');
-    toggleDarkMode.textContent = 'Return to the light side';
+    toggleDarkMode.textContent = '返回亮色系';
   }
 });
 </script>
 
-See [Customization]({% link docs/customization.md %}) for more information.
+查阅[定制]({% link docs/customization.md %})获取更多信息。
 
-## Callouts
+## 标注
 {: .d-inline-block }
 
-New (v0.4.0)
+新增 (v0.4.0)
 {: .label .label-green }
 
-To use this feature, you need to configure a `color` and (optionally) `title` for each kind of callout you want to use, e.g.:
+{: .note}
+Callout 翻译为标注，也不知道是否准确。标注通常是一段类似于引用块的具有彩色标识并且具备警醒作用的文字块。就如对当前这段文字就是。
+
+要使用这个功能，需要为每一种想用的标注配置 `color` 和可选的 `title`，例如：
 
 ```yaml
 callouts:
@@ -198,7 +201,7 @@ callouts:
     color: red
 ```
 
-This uses the color `$red-000` for the background of the callout, and `$red-300` for the title and box decoration.[^dark] You can then style a paragraph as a `warning` callout like this:
+这将启用 `$red-000` 颜色做为标注的背景色，`$red-300` 颜色做为标题和文字块的装饰[^dark]。你可以为一个段落启用 `warning` 标注样式：
 
 ```markdown
 {: .warning }
@@ -206,9 +209,9 @@ A paragraph...
 ```
 
 [^dark]:
-    If you use the `dark` color scheme, this callout uses `$red-300` for the background, and `$red-000` for the title.
+    如果你启用 `dark` 暗色系，这个标注将使用 `$red-300` 颜色作为背景色，`$red-000` 为标题颜色。
 
-The colors `grey-lt`, `grey-dk`, `purple`, `blue`, `green`, `yellow`, and `red` are predefined; to use a custom color, you need to define its `000` and `300` levels in your SCSS files. For example, to use `pink`, add the following to your `_sass/custom/setup.scss` file:
+颜色 `grey-lt`、`grey-dk`、`purple`、`blue`、`green`、`yellow`、`red` 都是应定义好的；要使用一个自定义颜色，需要在你的 SCSS 文件中定义其从 `000` 到 `300` 层级变化。例如，要使用 `pink`，需要在你的 `_sass/custom/setup.scss` 文件中添加：
 
 ```scss
 $pink-000: #f77ef1;
@@ -217,7 +220,7 @@ $pink-200: #e94ee1;
 $pink-300: #dd2cd4;
 ```
 
-You can override the default `opacity` of the background for a particular callout, e.g.:
+你可以覆盖掉背景色中默认的 `opacity` 从而设定一个特定的标注，例如：
 
 ```yaml
 callouts:
@@ -226,26 +229,22 @@ callouts:
     opacity: 0.3
 ```
 
-You can change the default opacity (`0.2`) for all callouts, e.g.:
+你可以修改所有标注的默认 opacity (`0.2`)，例如：
 
 ```yaml
 callouts_opacity: 0.3
 ```
 
-You can also adjust the overall level of callouts.
-The value of `callouts_level` is either `quiet` or `loud`;
-`loud` increases the saturation and lightness of the backgrounds.
-The default level is `quiet` when using the `light` or custom color schemes,
-and `loud` when using the `dark color scheme.`
+你可以整体调整标注的级别。`callouts_level` 要么是 `quiet`，要么是 `loud`；`loud` 会增加背景的饱和度和对比度。默认 `quiet` 用于亮色系 `light` 或者定制色系，`loud` 用于 `暗色系`。
 
-See [Callouts]({% link docs/ui-components/callouts.md %}) for more information.
+查阅[标注]({% link docs/ui-components/callouts.md %})获取更多信息。
 
-## Google Analytics
+## Google 分析
 
 {: .warning }
-> [Google Analytics 4 will replace Universal Analytics](https://support.google.com/analytics/answer/11583528). On **July 1, 2023**, standard Universal Analytics properties will stop processing new hits. The earlier you migrate, the more historical data and insights you will have in Google Analytics 4.
+> [Google Analytics 4 将取代 Universal Analytics](https://support.google.com/analytics/answer/11583528). 从**2023年7月1日**开始，标准 Universal Analytics 属性将停止处理新的点击。你越早迁移，你的历史数据和报告将越早启用 Google Analytics 4。
 
-Universal Analytics (UA) and Google Analytics 4 (GA4) properties are supported.
+Universal Analytics (UA) 和 Google Analytics 4 (GA4) 属性都支持。
 
 ```yaml
 # Google Analytics Tracking (optional)
@@ -254,68 +253,62 @@ ga_tracking: UA-2709176-10
 ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true/nil by default)
 ```
 
-### Multiple IDs
+### 多 ID
 {: .d-inline-block .no_toc }
 
-New (v0.4.0)
+新增 (v0.4.0)
 {: .label .label-green }
 
-This theme supports multiple comma-separated tracking IDs. This helps seamlessly transition UA properties to GA4 properties by tracking both for a while.
+本主题支持用逗号隔开的多个 ID。这将有助于顺利从 UA 属性向 GA4 属性迁移，应为可以两者可以同时使用。
 
 ```yaml
 ga_tracking: "UA-1234567-89,G-1AB234CDE5"
 ```
 
-## Document collections
+## 文档集合
 
-By default, the navigation and search include normal [pages](https://jekyllrb.com/docs/pages/).
-You can also use [Jekyll collections](https://jekyllrb.com/docs/collections/) which group documents semantically together.
+默认情况下，导航和搜索只包括普通[页面](https://jekyllrb.com/docs/pages/)。你也可以使用基于语义分组的 [Jekyll 集合](https://jekyllrb.com/docs/collections/)。
 
 {: .warning }
-> Collection folders always start with an underscore (`_`), e.g. `_tests`. You won't see your collections if you omit the prefix.
+> 集合文件夹名字用下划线（`_`）开始，例如 `_tests`。如果你省略了这个前缀，你就找不到你的集合了。
 
-For example, put all your test files in the `_tests` folder and create the `tests` collection:
+例如，把你的测试文件都放入 `_tests` 文件夹，然后创建 `tests` 集合：
 
 ```yaml
-# Define Jekyll collections
+# 定义 Jekyll 集合
 collections:
-  # Define a collection named "tests", its documents reside in the "_tests" directory
+  # 定义一个叫做 "tests" 的集合，其文档都在 "_tests" 文件夹内
   tests:
     permalink: "/:collection/:path/"
     output: true
 
 just_the_docs:
-  # Define which collections are used in just-the-docs
+  # 定义用于 just-the-docs 的集合
   collections:
-    # Reference the "tests" collection
+    # 参考 "tests" 集合
     tests:
-      # Give the collection a name
+      # 设定集合名字
       name: Tests
-      # Exclude the collection from the navigation
-      # Supports true or false (default)
+      # 从导航中去掉集合
+      # 支持布尔值 true 或 false (default)
       # nav_exclude: true
-      # Fold the collection in the navigation
-      # Supports true or false (default)
+      # 导航中的集合能否折叠
+      # 支持布尔值 true 或者 false (default)
       # nav_fold: true  # note: this option is new in v0.4
-      # Exclude the collection from the search
-      # Supports true or false (default)
+      # 从搜索中去除集合
+      # 支持布尔值 true 或 false (default)
       # search_exclude: true
 ```
 
-The navigation for all your normal pages (if any) is displayed before those in collections.
+导航会显示所有除了集合的页面。
 
-<span>New (v0.4.0)</span>{: .label .label-green }
-Including `nav_fold: true` in a collection configuration *folds* that collection:
-an expander symbol appears next to the collection name,
-and clicking it displays/hides the links to the top-level pages of the collection.[^js-disabled]
+<span>新增 (v0.4.0)</span>{: .label .label-green }
+在一个集合的配置中如果包含 `nav_fold: true` 则会**折叠**集合：一个打开符号会跟在集合名字后面，通过点击会显示或隐藏集合的顶级页面。[^js-disabled]
 
-[^js-disabled]: <span>New (v0.6.0)</span>{: .label .label-green }
-    When JavaScript is disabled in the browser, all folded collections are automatically expanded,
-    since clicking expander symbols has no effect.
-    (In previous releases, navigation into folded collections required JavaScript to be enabled.)
-
-You can reference multiple collections.
-This creates categories in the navigation with the configured names.
+[^js-disabled]: <span>新增 (v0.6.0)</span>{: .label .label-green }
+    当 JavaScript 在浏览器中未启用时，因为点击已经不起作用，所以所有折叠的集合会自动展开。（在前一个版本中，导航进入集合需要启用 JavaScript。）
+    
+你可以使用多个集合。这将在导航中用配置的名字创建分类目录。
 
 ```yaml
 collections:
@@ -334,6 +327,6 @@ just_the_docs:
       name: Tutorials
 ```
 
-When *all* your pages are in a single collection, its name is not displayed.
+当**所有**页面在一个集合里时，名字将不显示。
 
-The navigation for each collection is a separate name space for page titles: a page in one collection cannot be a child of a page in a different collection, or of a normal page.
+导航为每个集合创建一个独立的页面命名空间：一个页面不能同时是不同集合的子页面，或者普通页面。

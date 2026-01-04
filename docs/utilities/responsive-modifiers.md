@@ -1,17 +1,17 @@
 ---
 title: 自适应修饰符
-parent: CSS 实用类
+parent: CSS 工具类
 ---
 
 # 自适应修饰符
 
-Just the Docs spacing works in conjunction with a variety of modifiers that allow you to target specific screen sizes responsively. Use these in conjunction with spacing and display prefix and suffix classes.
+Just the Docs 的留白结合针对各种特定尺寸的屏幕自适应修饰符使用。这些类结合留白和显示前缀以及后缀类使用。
 
-| Modifier  | Screen size                          |
+| 修饰符    | 屏幕尺寸                            |
 |:----------|:-------------------------------------|
-| (none)    | All screens until the next modifier  |
-| `xs`      | 320px (20rem) and up                 |
-| `sm`      | 500px (31.25rem) and up              |
-| `md`      | 740px (46.25rem) and up              |
-| `lg`      | 1120px (70rem) and up                |
-| `xl`      | 1400px (87.5rem) and up              |
+| (none)    | 所有屏幕尺寸直到遇见下一个修饰符   |
+| `xs`      | 320px (20rem) 及以上                 |
+| `sm`      | 500px (31.25rem) 及以上              |
+| `md`      | 740px (46.25rem) 及以上              |
+| `lg`      | 1120px (70rem) 及以上                |
+| `xl`      | 1400px (87.5rem) 及以上              |
