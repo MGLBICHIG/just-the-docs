@@ -42,11 +42,11 @@ nav_enabled: true
 
 ```
 
-## Other layouts
+## 其他 layout
 
-Just the Docs has further layouts: `about`, `home`, `page`, and `post`. Currently, they are all based on the `default` layout. See the [Jekyll docs about inheritance] for how to customize them.
+Just the Docs 还有细分的 layout：`about`、`home`、`page`、`post`。当前所有的 layout 基于 `default` 版型。查阅 [Jekyll 文档有关继承内容] 获取更多定制细节。
 
-[front matter]: https://jekyllrb.com/docs/front-matter/ "Jekyll docs about front matter"
-[Jekyll 关于版型的文档页面]: https://jekyllrb.com/docs/layouts/ "Jekyll docs about layouts"
-[Jekyll 的默认 front matter]: https://jekyllrb.com/docs/configuration/front-matter-defaults/ "Jekyll docs about front matter defaults"
-[Jekyll docs about inheritance]: https://jekyllrb.com/docs/layouts/#inheritance "Jekyll docs about inheritance"
+[front matter]: https://jekyllrb.com/docs/front-matter/ "Jekyll 文档有关 front matter 内容"
+[Jekyll 关于版型的文档页面]: https://jekyllrb.com/docs/layouts/ "Jekyll 关于版型的文档页面"
+[Jekyll 的默认 front matter]: https://jekyllrb.com/docs/configuration/front-matter-defaults/ "Jekyll 的默认 front matter"
+[Jekyll 文档有关继承内容]: https://jekyllrb.com/docs/layouts/#inheritance "Jekyll 文档有关继承内容"

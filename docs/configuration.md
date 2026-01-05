@@ -6,7 +6,7 @@ nav_order: 2
 # 配置
 {: .no_toc }
 
-Just the Docs 是 Jekyll 的主题，所以有些参数需要在站点的 Jekyll 配置文件 \_config.yml 文件中设定。
+Just the Docs 是一款基于 Jekyll 软件的主题。所以，有些参数在站点的 Jekyll 配置文件 \_config.yml 中设定。
 {: .fs-6 .fw-300 }
 
 ## 页面目录
